@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Tell Me About Yourself:</legend>
+
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="e.g. Susan Collins"
+            required
+          />
+          <label
+            >Email:
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g. boozysuzie@me.com"
+              required
+            />
+          </label>
+          <label for="bio">Short Bio:</label>
+          <textarea
+            name="bio"
+            id="bio"
+            rows="4"
+            cols="20"
+            minlength="150"
+            maxlength="50000"
+            placeholder="Tell me your story"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Where Are You From:</legend>
+
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option value="">Choose a Country</option>
+            <option value="eswatini">Eswatini</option>
+            <option value="kiribati">Kiribati</option>
+            <option value="lesotho">Lesotho</option>
+            <option value="liechtenstein">Liechtenstein</option>
+          </select>
+          <label for="country">State/Province:</label>
+          <select name="country" id="country">
+            <option value="">Choose a State or Province</option>
+            <option value="idaho">Idaho</option>
+            <option value="quebec">Quebec</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="british-columbia">British Columbia</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>How Did You Hear About Me?</legend>
+          <label for="word-of-mouth">Word of Mouth</label>
+          <input
+            type="radio"
+            name="source"
+            id="word-of-mouth"
+            value="word-of-mouth"
+          />
+          <label for="google-search">Google Search</label>
+          <input
+            type="radio"
+            name="source"
+            id="google-search"
+            value="google-search"
+          />
+          <label for="social-media"> Social Media</label>
+          <input
+            type="radio"
+            name="source"
+            id="social-media"
+            value="social-media"
+          />
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>
